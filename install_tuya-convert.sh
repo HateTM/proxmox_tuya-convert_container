@@ -57,7 +57,7 @@ apt-get -qqy upgrade &>/dev/null
 msg "Installing prerequisites..."
 echo "samba-common samba-common/dhcp boolean false" | debconf-set-selections
 apt-get -qqy install \
-  git curl network-manager net-tools samba iw &>/dev/null
+  git curl network-manager net-tools samba &>/dev/null
 
 # Clone tuya-convert
 msg "Cloning tuya-convert..."
