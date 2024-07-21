@@ -68,11 +68,10 @@ msg "Configuring tuya-convert..."
 ./configure_tuya-convert.sh
 
 # Install tuya-convert
-msg "Running tuya-convert/install_prereq.sh..."
 cd tuya-convert
 ./install_prereq.sh 
-systemctl disable dnsmasq &>/dev/null
-systemctl disable mosquitto &>/dev/null
+systemctl disable dnsmasq 
+systemctl disable mosquitto 
 
 # Customize OS
 msg "Customizing OS..."
